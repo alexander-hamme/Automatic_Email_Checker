@@ -24,11 +24,11 @@ class WebmailChecker:
         self.driver = None
         self.sessionUrl = ''
         self.sessionID = ''
-        self.website_url = "https://email.school.edu"
+        self.website_url = "https://email.school.edu"   
         self.username = str(user)
         self.password = str(pw)
-        self.user_field_selector = 'zLoginField'
-        self.check_page_loaded_element = 'username'
+        self.user_field_selector = 'zLoginField'                    # These elements can be easily found on your email page,
+        self.check_page_loaded_element = 'username'                 # if your browser supports Inspect Element
         self.wait_mail_loaded_element = 'zi_search_inputfield'
         self.email_xpath_locator = "//*[contains(@id, 'zli__TV__')]"
         self.email_class_name_locator = 'RowDouble'
@@ -49,11 +49,13 @@ class WebmailChecker:
 
     def login(self):
         '''
-        Log in to email login page using web page element locators
+        Log in to email using web page element locators
         :return: None
         '''
-        if not(self.username is None or self.password is None):
-            self.driver.implicitly_wait(self.DRIVER_WAIT_TIME)
+        if self.username is None or self.password is None:
+            raise SystemExit("Username and/or password not specified")
+            
+        self.driver.implicitly_wait(self.DRIVER_WAIT_TIME)
         
         try:
             WebDriverWait(self.driver, 2 * self.DRIVER_WAIT_TIME).until (
