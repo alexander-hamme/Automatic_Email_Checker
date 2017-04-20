@@ -2,7 +2,7 @@
 """
 Created on Sat Nov 05 13:42:20 2016
 
-@author: Alex Hamme
+@author: Alexander Hamme
 """
 from __future__ import print_function
 from selenium import webdriver
