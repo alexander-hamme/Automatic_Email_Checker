@@ -13,3 +13,5 @@
 - Selenium WebDriver
 <br>
 - PyAutoGUI
+
+<small>Note: this was designed specifically for a specific institution's webmail page, but it can easily be repurposed and modified for use on another!</small>
