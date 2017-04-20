@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
+
 """
 Created on Sat Nov 05 13:42:20 2016
-
 @author: Alexander Hamme
 """
+
 from __future__ import print_function
 from selenium import webdriver
 from selenium.webdriver.common.by import By
