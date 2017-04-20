@@ -15,4 +15,4 @@
 - PyAutoGUI
 <br>
 <br>
-_Note: this was designed specifically for a specific institution's webmail page, but it can easily be repurposed and modified for use on another!_
+<i>Note: this was designed specifically for a specific institution's webmail page, but it can easily be repurposed and modified for use on another!</i>
